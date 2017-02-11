@@ -1,0 +1,120 @@
+body{
+
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	list-style: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-board{
+	margin: 5%;
+	border: 4px solid #4F4F4F;
+	background-color: #FFFFF0;
+	position: relative;
+	z-index: 0;
+}
+.ba-board_checkerboard{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+.ba-board_checkerboard li{
+	margin: 0;
+	width: 12.5%;
+	height: 11vw;
+	list-style: none;
+}
+.ba-board_checkerboard--dark {  background-color:#4F4F4F}
+
+.ba-checker ul{
+	list-style: none;
+	width: 100%;
+}
+
+.ba-checker__back{
+	position: absolute;
+	top: 0;
+    padding: 0;
+	margin: 0;
+}
+.ba-checker__white{
+	position: absolute;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+.ba-checker--left img {
+	float: left;
+	margin-right: 12.5%;
+}
+.ba-checker--right img{
+	float: right;
+	margin-left: 12.5%;
+ }
+.ba-checker img{
+	width: 12.5%;
+	z-index: 2;
+	border-radius: 50%;
+}
+
+.ba-checker img:hover{
+	box-shadow: 0 0 25px rgba(255, 236, 139,0.5);
+}
